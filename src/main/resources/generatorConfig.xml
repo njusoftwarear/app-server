@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="context1">
+        <jdbcConnection connectionURL="jdbc:mysql://47.106.153.201:3306/huawei_AR?nullCatalogMeansCurrent=true"
+                        driverClass="com.mysql.cj.jdbc.Driver" userId="root"  password="081337"/>
+        <javaModelGenerator targetPackage="com.example.server.model" targetProject="server">
+            <property name="constructorBased" value="true"/>
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="com.example.server.mapper" targetProject="server"  />
+        <javaClientGenerator targetPackage="com.example.server.mapper" targetProject="server"
+                             type="XMLMAPPER"/>
+        <table tableName="user"></table>
+
+    </context>
+</generatorConfiguration>
